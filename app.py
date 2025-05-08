@@ -212,7 +212,6 @@ def generate_email_html(form_data):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     TO_EMAIL = os.environ.get('TO_EMAIL')
-    print('+++++++++++',TO_EMAIL)
     if request.method == 'GET':
         # Return the rendered template for GET requests
         form = ContactForm()
